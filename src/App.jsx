@@ -13,8 +13,11 @@ function App() {
         <div className="card">
             <UploadVideoWidget onSetVideoUrl={setVideoUrl}/>
         </div>
-        <div>
-            {/* <VideoPlayer videoUrl={videoUrl}/> */}
+        <div className='card' style={{width: "90vw", margin: "auto"}}>
+        <h1>Video</h1>
+        {videoUrl && 
+            <VideoPlayer videoUrl={videoUrl}/>
+        }    
         </div>
         
     </>

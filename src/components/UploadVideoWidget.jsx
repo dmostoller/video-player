@@ -16,7 +16,7 @@ function UploadVideoWidget({onSetVideoUrl}) {
         }, function(error, result) { 
             if (!error && result && result.event === "success") {
                 // console.log(result.info);
-                onSetVideoUrl(result.info.secure_url);
+                onSetVideoUrl(result.info.public_id);
     }});
     }, [onSetVideoUrl])
 
